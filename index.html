@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
+  <title>Снеси это немедленно</title>
+  <script>window.__LANGS=["en"];window.__CLOUD_KEYS=["knockit_save"];window.__VK_APP_ID="54752988";</script>
+<script src="./libs/vk-bridge.min.js"></script>
+<script>window.__PLATFORM__='vkok';</script>
+<script src="./libs/vkok-boot.js"></script>
+  <script type="module" crossorigin src="./assets/index-BHnl9Hcj.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Bkc4G6cw.css">
+</head>
+<body>
+  <!-- Экран «поверните устройство». Игра нарисована в поле 960×600 и вписывается
+       в экран целиком: в портрете на телефоне это поле высотой в четверть экрана,
+       где пальцем не попасть ни по шару, ни по кнопке снаряда. Показывается
+       только на узких экранах в портрете — планшету он не нужен.
+       Текст лежит в разметке намеренно: его переводит общий обход разметки
+       (translateDom), и отдельной ветки перевода для него не нужно. -->
+  <div id="rotate" aria-hidden="true">
+    <div class="rotate-icon"></div>
+    <p>Поверните устройство</p>
+    <span>Игра рассчитана на горизонтальный экран</span>
+  </div>
+  <div id="app">
+    <canvas id="game"></canvas>
+  </div>
+</body>
+</html>
